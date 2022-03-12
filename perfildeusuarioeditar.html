@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Editar Perfil</title>
+    <link rel="stylesheet" href="./Styles/perfildeusuarioeditar.css">
+  </head>
+  <body>
+    <nav>
+      <div class="navbar-left">
+        <h1>Rick and Morty</h1>
+      </div>
+      <div class="navbar-right">
+        <ul>
+          <li><a href="/">Regresar al inicio</a></li>
+          <li><a href="/">Mi lista de episodios</a></li>
+          <li><a href="/">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="profile">
+        <div class="profile-two">
+          <p class="title">Perfil de usuario</p>
+          <a href="/" class="return">Regresar</a>
+        </div>
+        <div class="form-container">
+          <form action="/" class="form">
+            <div>
+              <label for="nombre" class="label">Nombre:</label>
+              <input
+                type="text"
+                id="nombre"
+                placeholder=""
+                class="input input-nombre"
+              />
+
+              <label for="usuario" class="label">Nombre de usuario:</label>
+              <input
+                type="text"
+                id="usuario"
+                placeholder=""
+                class="input input-usuario"
+              />
+
+              <label for="correo" class="label">Correo electrónico:</label>
+              <input
+                type="text"
+                id="correo"
+                placeholder=""
+                class="input input-correo"
+              />
+              <label for="contraseña" class="label">Contraseña:</label>
+              <a class="edit" href="/">Editar contraseña</a>
+            </div>
+          </form>
+          <div>
+            <figure class="image">
+              <img
+                src="./Assets/Rick-and-Morty-Bizarre-rap-video-wants-to-put-you.jpg"
+                alt="rick and morty"
+                class="img-profile"
+              />
+            </figure>
+          </div>
+        </div>
+        <div class="save">
+          <input type="submit" value="Guardar" class="button" />
+        </div>
+        <div class="border"></div>
+        <div class="delete-profile">
+          <p class="paragraph-one">Eliminar Perfil</p>
+          <p class="paragraph-two">Al eliminar el perfil se borrarán todos los datos relacionados.</p>
+          <button class="delete-button">Eliminar perfil</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
