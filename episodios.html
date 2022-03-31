@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Styles/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+	<title>Rick And Morty API Project</title>
+	<link rel="stylesheet" href="Styles/episodios_styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+	<nav class="navbar">
+	<!-- LOGO -->
+		<li class="logo"><a href="#">Rick And Morty</a></li>
+	<!-- NAVIGATION MENU -->
+		<ul class="nav-links">
+	<!-- Hamburger Menu -->
+		<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+	<!-- NAVIGATION -->
+		<div class="menu">
+		<li class="item"><a href="#">Inicio</a></li>
+		    <li class="item"><a href="#">Episodios</a></li>
+		    <li class="item"><a href="#">Colaboradores</a></li>
+		    <li class="item"><a href="#">Login</a></li>
+		</div>
+		</ul>
+	</nav>
+
+    <div class="datatable-container">
+	<h1 class="text-table">Lista de Episodios</h1>
+    	<div class="header-table">
+    		<div class="list-items">
+    			Show
+    			<select name="n-entries" id="n-entries" class="n-entries">
+    				<option value="15">5</option>
+    				<option value="10" selected>10</option>
+    				<option value="15">15</option>
+    			</select>
+    		</div>
+    		<div class="search">
+    			Search: <input type="text" id="" class="search-input">
+    		</div>
+    	</div>
+    </div>
+
+    <!-- TABLE -->
+	<table class="customers">
+  		<thead>
+            <tr>
+                <th>Name</th>
+                <th>Air Date</th>
+                <th class="hidden">Episodio</th>
+                <th class="hidden">Personajes</th>
+                <th class="hidden">URL</th>
+                <th class="hidden">Creado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pilot</td>
+                <td>December 2, 2013</td>
+                <td class="hidden">S01E01</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">2017-11-10T12:56:33. 798Z</td>
+            </tr>
+            <tr>
+               <td>Pilot</td>
+                <td>December 2, 2013</td>
+                <td class="hidden">S01E01</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">2017-11-10T12:56:33. 798Z</td>
+            </tr>
+            <tr>
+               <td>Pilot</td>
+                <td>December 2, 2013</td>
+                <td class="hidden">S01E01</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">2017-11-10T12:56:33. 798Z</td>
+            </tr>
+            <tr>
+                <td>Pilot</td>
+                <td>December 2, 2013</td>
+                <td class="hidden">S01E01</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">2017-11-10T12:56:33. 798Z</td>
+            </tr>
+            <tr>
+                <td>Pilot</td>
+                <td>December 2, 2013</td>
+                <td class="hidden">S01E01</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">2017-11-10T12:56:33. 798Z</td>
+            </tr>
+            <tr>
+                <td>Pilot</td>
+                <td>December 2, 2013</td>
+                <td class="hidden">S01E01</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">2017-11-10T12:56:33. 798Z</td>
+            </tr>
+            <tr>
+                <td>Pilot</td>
+                <td>December 2, 2013</td>
+                <td class="hidden">S01E01</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">2017-11-10T12:56:33. 798Z</td>
+            </tr>
+            <tr>
+                <td>Pilot</td>
+                <td>December 2, 2013</td>
+                <td class="hidden">S01E01</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">https://rickandmortyapi.com/api/character</td>
+                <td class="hidden">2017-11-10T12:56:33. 798Z</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Air Date</th>
+                <th class="hidden">Episodio</th>
+                <th class="hidden">Personajes</th>
+                <th class="hidden">URL</th>
+                <th class="hidden">Creado</th>
+            </tr>
+        </tfoot>
+	</table>
+    <div class="footer-table">
+		<p>Show 1 to 10 of 57 entries</p>
+		<div class="pagination">
+		  <a href="#">Previous</a>
+		  <a href="#">1</a>
+		  <a href="#">2</a>
+		  <a href="#">3</a>
+		  <a href="#">4</a>
+		  <a href="#">5</a>
+		  <a href="#">6</a>
+		  <a href="#">Next</a>
+		</div>
+	</div>
+
+    <!-- FOOTER -->
+	<footer class="footer">
+		<li class="footer-logo"><a href="#">Rick And Morty <span>API Project</span></a></li>
+		<ul class="footer-links">
+			<div class="footer-menu">
+				<li class="item"><a href="#">Inicio</a></li>
+			    <li class="item"><a href="#">Episodios</a></li>
+			    <li class="item"><a href="#">Colaboradores</a></li>
+			    <li class="item"><a href="#">Login</a></li>
+			</div>
+		</ul>
+	<p class="sign">Made with <img src="Assets/299063_heart_icon.png" alt="image heart"></p>
+	</footer>
+</body>
+</html>
