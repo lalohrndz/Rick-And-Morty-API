@@ -58,3 +58,14 @@ body {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
+@media (max-width: 950px) {
+  .form-container {
+    width: 50vw;
+  }
+
+  .primary-button {
+    width: 50vw;
+  }
+
+}

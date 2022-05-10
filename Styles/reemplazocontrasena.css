@@ -50,3 +50,18 @@ body {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
+@media (max-width: 950px) {
+  .login {
+    min-width: auto;
+  }
+
+  .form-container {
+    grid-column: 1 / span 2;
+    width: 50vw;
+  }
+  
+  .primary-button {
+    width: 50vw;
+  }
+}

@@ -8,8 +8,11 @@
   src: url("/Get-Schwifty-Font/get_schwifty.ttf");
 }
 body {
+  margin: 0;
   font-family: "Quicksand", sans-serif;
 }
+
+/*Titulo y barra de navegación */
 nav {
   background-image: url("/Assets/QQWVSJ6MDVGKRELX455KIABEEY.gif");
   background-repeat: no-repeat;
@@ -42,6 +45,9 @@ h1 {
   font-weight: bold;
   font-size: 17px;
 }
+
+/*Contenido */
+
 .title {
   margin: 25px 0;
 }
@@ -112,54 +118,104 @@ h1 {
   text-decoration: none;
   color: black;
 }
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 100px 0 24px;
+
+/*Footer*/
+.pie-pagina {
+  width: auto;
   background-color: #00ad54;
 }
-.footer .footer-left {
-  margin: 20px 0 0;
+.pie-pagina .grupo-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
 }
-.footer .footer-left p {
+
+.box-1 p {
   font-family: "rickandmorty";
   color: white;
   font-size: 30px;
-  font-weight: 400;
+  margin: 0 0 0 20px;
 }
-.footer .footer-left span {
+
+.box-1 span {
   color: white;
-  font-size: 23px;
+  font-size: 26px;
   justify-content: center;
-  padding: 0 22px 0 22px;
+  margin: 12%;
 }
-.footer .footer-center {
+
+.box-2 {
   display: flex;
-  justify-content: space-between;
-  padding-top: 220px;
-  padding-bottom: 5px;
+  align-items: center;
+  justify-content: center;
 }
-.footer .footer-center p {
+
+.box-2 p {
   color: white;
-  font-size: 15px;
+  font-size: 80%;
   font-weight: 400;
 }
-.footer .footer-center img {
-  width: 20px;
+
+.heart img {
+  width: 1em;
   margin: 0 10px 0 10px;
 }
-.footer .footer-right {
-  padding-top: 100px;
+
+.nav a {
+  display: flex;
 }
-.footer .footer-right ul {
-  padding-bottom: 15px;
-}
-.footer .footer-right li {
+
+.box-3 a {
   list-style: none;
-  margin: 10px 10px;
-  text-align: right;
-}
-.footer .footer-right a {
-  color: white;
   text-decoration: none;
+  text-align: right;
+  color: white;
+  padding-bottom: 1em;
+  margin-left: 5em;
+}
+
+@media (max-width: 950px) {
+  nav {
+    background-image: url("/Assets/rick-morty.jpg");
+    background-size: cover; 
+    width: 100%;
+    height: 100%;
+    min-height: 10em;
+    min-width: 105%;
+  }
+
+  .navbar {
+    justify-content: center;
+    margin: 10px 10px;
+  }
+
+  .navbar-right ul {
+    display: none; 
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+
+  /*footer*/
+  .pie-pagina .grupo-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  .box-1 {
+    margin: 0 27px 0 27px;
+  }
+
+  .box-3 {
+    text-align: center;
+  }
+
+  .nav a {
+    justify-content: center;
+    margin: 0 27px 0 27px;
+  }
 }
