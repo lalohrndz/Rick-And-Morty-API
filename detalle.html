@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4dfb25c132.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--El modal se va a realizar con CSS Grid (areas), cada div dentro de la clase contenedor serán las areas-->
+    <div id="contenedor">
+
+        <span id="cerrar">
+            <i class="fa-solid fa-xmark fa-2xl" id="icono-cerrar"></i>
+        </span>
+        
+        <div id="foto">
+            <!--En este div irá la imagen del personaje-->
+            <img src="https://static.wikia.nocookie.net/wiki-de-rick-morty/images/4/41/Morty_Smith.jpg/revision/latest?cb=20170322201303&path-prefix=es" alt="Morthy Smith sonriendo">
+            <span id="like">
+                <i class="fa-solid fa-heart fa-2xl"></i>
+            </span>
+        </div>
+        
+        <div id="info">
+            <!--En este div irá la información-->
+            <ul>
+                <li>Nombre:</li>
+                <li>Especie:</li>
+                <li>Género:</li>
+                <li>Status:</li>
+                <li>Origen:</li>
+            </ul>
+        </div>
+        
+        <div id="datos">
+            <!--En este div irán los datos correspondientes del determinado personaje-->
+            <ul>
+                <li>Morty Smith</li>
+                <li>Human</li>
+                <li>Human</li>
+                <li>Alive</li>
+                <li>Tierra</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+/*? Fuente provisoria porque no sé cuál es la fuente del diseño de alta fidelidad*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/** algunos colores que se van a usar */
+:root {
+    --color-white: #fff;
+    --color-black: #000000;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    color: var(--color-black);
+}
+
+/*? tengo algunos problemitas de overflow, creo que debería cambiar el max-width en el media query */
+/*todo: tengo que agregar un div para "cerrar" donde iría la X y otra columna angosta para el corazón de like */
+#contenedor {
+    position: relative;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    border: 1px solid gray;
+    width: 90%;
+    max-width: 680px;
+    min-height: 320px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.1fr 0.9fr;
+    gap: 20px;
+    grid-template-areas:
+    "foto cerrar cerrar"
+    "foto info datos";
+}
+
+/*? tampoco sé cómo hacer para que la foto sea más pequeña (en realidad, cuadrada, como en el diseño para móvil) en este caso */
+/*todo: solucionar el tema de la imagen del personaje para que no sea tan largo el contenedor */
+/*! intenté con background size y no funciona :( */
+@media (max-width: 630px) {
+    #contenedor {
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas:
+        "foto foto"
+        "info datos" 
+    }
+/*
+    #foto {
+        width: 200px;
+        height: 300px;
+    }
+
+    img {
+        background-size: 50% 50%;
+    } */
+
+    #info {
+        padding: 5px 10px 10 px 5px;
+    }
+    #datos {
+        padding: 5px 40px 10px 10px;
+        line-height: 0.1;
+    }
+    #cerrar {
+        z-index: 2;
+        font-size: x-large;
+    }
+
+}
+
+
+#foto {
+    border-width: 3px;
+    padding: 20px;
+    justify-content: center;
+    grid-area: foto;
+    position: relative;
+}
+
+img {
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    width: 100%;
+    grid-column: foto;
+    min-height: 200px;
+    height: 100%;
+}
+
+#info {
+    font-weight: bolder;
+    padding: 10px 10px 10px 5px;
+    justify-content: left;
+    grid-area: info;
+    line-height: 2.6;
+}
+
+#datos {
+    padding: 10px 40px 10px 10px;
+    justify-content: right;
+    text-align: right;
+    grid-area: datos;
+    line-height: 2.6;
+}
+
+/*todo: averiguar cómo posicionar sobre la imagen */
+/** se usó position relative en el parent element y position absolute más valores bottom, left para llegar a la posición deseada */
+#like {
+    color: red;
+    grid-column: 1/2;
+    position: absolute;
+    bottom: 20px;
+    left: 28px;
+}
+
+/*todo: probar usando padding*/
+/** se usó position relative en el parent element y position absolute más valores top, right para llegar a la posición deseada */
+#cerrar {
+    grid-area: cerrar;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
